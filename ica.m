@@ -17,4 +17,4 @@ end
 load(datafile);
 
 [EEG.icaweights, EEG.icasphere] = runica(tmpdata, 'lrate', 0.001,  g.options{:});
-save('/tmp/result.mat', 'EEG', '-v7.3');
+save('dist/result.mat', 'EEG', '-v7.3');
